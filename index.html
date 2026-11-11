@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>初會小教室｜初級會計講義</title>
+  <meta name="description" content="給大一新生的初級會計講義：會計恆等式、借貸法則、調整分錄，每篇 10 分鐘讀完。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-root=".">
+  <header id="site-header"></header>
+
+  <main class="container">
+    <section class="hero">
+      <span class="eyebrow">初級會計・助教講義</span>
+      <h1>會計不難，<br>只是需要<span class="mark">有人講清楚</span>。</h1>
+      <p>這裡整理了初級會計課堂上最常被問的觀念。每篇講義都有觀念說明、「小明咖啡」的實際例題、常見錯誤和小測驗，大約 10 分鐘就能讀完一篇。</p>
+      <input id="lesson-search" class="search" type="search" placeholder="搜尋講義，例如：分錄、調整、權益">
+    </section>
+
+    <section id="lessons">
+      <div id="lesson-list"></div>
+    </section>
+
+    <section id="about" class="about">
+      <h2 class="unit-title">關於這個網站</h2>
+      <div class="about-grid">
+        <div class="concept">
+          <h3>每篇都一樣的結構</h3>
+          <p>學習目標 → 核心觀念 → 範例演練 → 常見錯誤 → 小測驗 → 重點回顧。熟悉一篇，就知道其他篇怎麼讀。</p>
+        </div>
+        <div class="concept">
+          <h3>同一間公司貫穿全站</h3>
+          <p>所有例題都用虛構的「小明咖啡」，從開業、記帳到期末調整，前後篇的數字可以互相對照。</p>
+        </div>
+        <div class="concept">
+          <h3>持續新增中</h3>
+          <p>講義依照 <code>CLAUDE.md</code> 中的規則撰寫，新增新主題時格式與風格都會保持一致。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="data/lessons.js"></script>
+  <script src="assets/site.js"></script>
+</body>
+</html>
