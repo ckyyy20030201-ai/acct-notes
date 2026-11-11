@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>存貨成本：先進先出法｜初會小教室</title>
+  <meta name="description" content="先買進的先賣出：算出銷貨成本與期末存貨。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-root=".." data-lesson="05-inventory-fifo">
+  <header id="site-header"></header>
+
+  <main class="lesson">
+    <p class="breadcrumb" id="lesson-breadcrumb"></p>
+    <h1>存貨成本：先進先出法</h1>
+    <div class="lesson-meta badges" id="lesson-meta"></div>
+
+    <h2>學習目標</h2>
+    <div class="goal"><ul>
+      <li>能說明為什麼同一種商品會有不同的進貨成本，需要成本流動假設</li>
+      <li>能用先進先出法（FIFO）計算銷貨成本與期末存貨</li>
+      <li>能在永續盤存制下寫出進貨與銷貨的分錄</li>
+    </ul></div>
+
+    <h2>核心觀念</h2>
+    <p>同一款咖啡豆，這個月進貨 $200 一包，下個月可能漲到 $220。賣出一包時，成本要算 $200 還是 $220？這就需要「成本流動假設」。</p>
+
+    <p class="formula">期初存貨 ＋ 本期進貨 ＝ 銷貨成本 ＋ 期末存貨</p>
+    <p>等號左邊叫「可供銷售商品成本」。不論用哪一種方法，左邊的總數都一樣，差別只在於這個總數怎麼分配到右邊兩項。</p>
+
+    <div class="concept">
+      <h3>先進先出法（FIFO）：最早買的，假設最早賣掉</h3>
+      <p>賣出商品時，先用<strong>最早</strong>那一批的成本計算銷貨成本；所以留在倉庫的期末存貨，會是<strong>最近</strong>幾批的成本。</p>
+    </div>
+
+    <div class="concept">
+      <h3>永續盤存制：每次賣出都同時記成本</h3>
+      <p>每一次銷貨都要寫兩筆分錄：一筆記<strong>銷貨收入</strong>（用售價），一筆記<strong>銷貨成本</strong>（用進價），同時把存貨減掉。分錄的借貸方向請參考<a href="02-debit-credit.html">借貸法則</a>。</p>
+    </div>
+
+    <div class="tip"><p>FIFO 有一個好用的特性：用永續盤存制逐筆算，和月底一次算（定期盤存制），得到的銷貨成本<strong>完全相同</strong>。考試時可以用另一種方法驗算。</p></div>
+
+    <h2>範例演練</h2>
+    <p>小明咖啡開始販售包裝咖啡豆，每包售價 $400。3 月份的進貨與銷貨如下：</p>
+
+    <div class="table-wrap">
+      <table class="simple">
+        <thead><tr><th>日期</th><th>事項</th><th class="num">數量（包）</th><th class="num">單位成本</th><th class="num">總成本</th></tr></thead>
+        <tbody>
+          <tr><td>3/1</td><td>期初存貨</td><td class="num">10</td><td class="num">200</td><td class="num">2,000</td></tr>
+          <tr><td>3/5</td><td>現金進貨</td><td class="num">20</td><td class="num">220</td><td class="num">4,400</td></tr>
+          <tr><td>3/12</td><td>現金銷貨</td><td class="num">15</td><td class="num">—</td><td class="num">—</td></tr>
+          <tr><td>3/20</td><td>賒購進貨</td><td class="num">10</td><td class="num">250</td><td class="num">2,500</td></tr>
+          <tr><td>3/28</td><td>現金銷貨</td><td class="num">18</td><td class="num">—</td><td class="num">—</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>依 FIFO 計算兩次銷貨的成本：</p>
+    <ul>
+      <li><strong>3/12 賣 15 包</strong>：先賣期初 10 包 × 200 ＝ 2,000，再賣 3/5 那批 5 包 × 220 ＝ 1,100，銷貨成本 <strong>3,100</strong>。</li>
+      <li><strong>3/28 賣 18 包</strong>：3/5 那批還剩 15 包 × 220 ＝ 3,300，再賣 3/20 那批 3 包 × 250 ＝ 750，銷貨成本 <strong>4,050</strong>。</li>
+      <li><strong>期末存貨</strong>：3/20 那批剩 7 包 × 250 ＝ <strong>1,750</strong>。</li>
+    </ul>
+    <p>驗算：可供銷售商品成本 2,000 ＋ 4,400 ＋ 2,500 ＝ 8,900 ＝ 銷貨成本（3,100 ＋ 4,050）7,150 ＋ 期末存貨 1,750。</p>
+
+    <div class="table-wrap">
+      <table class="journal">
+        <thead><tr><th>日期</th><th>會計科目</th><th>借方</th><th>貸方</th></tr></thead>
+        <tbody>
+          <tr><td rowspan="2">3/5</td><td>存貨</td><td class="num">4,400</td><td></td></tr>
+          <tr class="cr"><td>現金</td><td></td><td class="num">4,400</td></tr>
+          <tr class="memo"><td colspan="4">現金進貨 20 包 × 220</td></tr>
+
+          <tr><td rowspan="2">3/12</td><td>現金</td><td class="num">6,000</td><td></td></tr>
+          <tr class="cr"><td>銷貨收入</td><td></td><td class="num">6,000</td></tr>
+          <tr class="memo"><td colspan="4">銷貨 15 包 × 售價 400（記收入）</td></tr>
+          <tr><td rowspan="2">3/12</td><td>銷貨成本</td><td class="num">3,100</td><td></td></tr>
+          <tr class="cr"><td>存貨</td><td></td><td class="num">3,100</td></tr>
+          <tr class="memo"><td colspan="4">依 FIFO 結轉成本（10 × 200 ＋ 5 × 220）</td></tr>
+
+          <tr><td rowspan="2">3/20</td><td>存貨</td><td class="num">2,500</td><td></td></tr>
+          <tr class="cr"><td>應付帳款</td><td></td><td class="num">2,500</td></tr>
+          <tr class="memo"><td colspan="4">賒購進貨 10 包 × 250</td></tr>
+
+          <tr><td rowspan="2">3/28</td><td>現金</td><td class="num">7,200</td><td></td></tr>
+          <tr class="cr"><td>銷貨收入</td><td></td><td class="num">7,200</td></tr>
+          <tr class="memo"><td colspan="4">銷貨 18 包 × 售價 400（記收入）</td></tr>
+          <tr><td rowspan="2">3/28</td><td>銷貨成本</td><td class="num">4,050</td><td></td></tr>
+          <tr class="cr"><td>存貨</td><td></td><td class="num">4,050</td></tr>
+          <tr class="memo"><td colspan="4">依 FIFO 結轉成本（15 × 220 ＋ 3 × 250）</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>3 月銷貨毛利 ＝ 銷貨收入 13,200 － 銷貨成本 7,150 ＝ <strong>$6,050</strong>。</p>
+
+    <h2>常見錯誤</h2>
+    <div class="warn">
+      <p><strong>錯誤：</strong>先進先出，所以期末存貨用<strong>最早</strong>的單價計算。</p>
+      <p><strong>正確：</strong>最早的已經先賣掉了，留下來的是<strong>最晚</strong>進貨的那幾批。本例期末 7 包要用 3/20 的 250 計算，不是期初的 200。</p>
+    </div>
+    <div class="warn">
+      <p><strong>錯誤：</strong>銷貨時只記「借 現金／貸 銷貨收入」就結束了。</p>
+      <p><strong>正確：</strong>永續盤存制下，每次銷貨還要再記一筆「借 銷貨成本／貸 存貨」。少了這一筆，存貨會高估、銷貨成本會低估。</p>
+    </div>
+    <div class="warn">
+      <p><strong>錯誤：</strong>銷貨成本用售價 400 計算。</p>
+      <p><strong>正確：</strong>銷貨收入用<strong>售價</strong>，銷貨成本和存貨一律用<strong>進貨成本</strong>。兩者的差額才是毛利。</p>
+    </div>
+
+    <h2>小測驗</h2>
+    <details class="quiz">
+      <summary>Q1. 期初存貨 5 包 @ $100，之後進貨 5 包 @ $120，接著賣出 6 包。依 FIFO，銷貨成本和期末存貨各是多少？</summary>
+      <div class="answer">
+        <p><strong>答案：</strong>銷貨成本 $620，期末存貨 $480。</p>
+        <p>先賣期初 5 包 × 100 ＝ 500，再賣 1 包 × 120 ＝ 120，合計 620；剩下 4 包 × 120 ＝ 480。驗算：500 ＋ 600 ＝ 1,100 ＝ 620 ＋ 480。</p>
+      </div>
+    </details>
+    <details class="quiz">
+      <summary>Q2. 物價持續上漲時，和加權平均法相比，FIFO 算出的淨利會比較高還是比較低？</summary>
+      <div class="answer">
+        <p><strong>答案：</strong>比較高。</p>
+        <p>FIFO 把較早、較便宜的成本先轉成銷貨成本，所以銷貨成本較低、淨利較高；期末存貨則反映較新、較貴的成本，金額也較高。</p>
+      </div>
+    </details>
+    <details class="quiz">
+      <summary>Q3. 判斷題：先進先出法代表公司實際上一定要先把最早進的商品拿出來賣。</summary>
+      <div class="answer">
+        <p><strong>答案：</strong>錯。</p>
+        <p>FIFO 是<strong>成本流動的假設</strong>，只決定成本怎麼計算，和商品實際怎麼從倉庫拿出來無關。</p>
+      </div>
+    </details>
+
+    <h2>重點回顧</h2>
+    <div class="recap"><ul>
+      <li><strong>期初存貨 ＋ 本期進貨 ＝ 銷貨成本 ＋ 期末存貨</strong>，可以用來驗算。</li>
+      <li>FIFO：最早的成本先轉為銷貨成本，<strong>期末存貨是最近幾批的成本</strong>。</li>
+      <li>永續盤存制每次銷貨要記兩筆：收入用售價，<strong>銷貨成本用進價</strong>。</li>
+      <li>物價上漲時，FIFO 的銷貨成本較低、淨利與期末存貨較高。</li>
+    </ul></div>
+  </main>
+
+  <nav id="lesson-pager"></nav>
+  <footer id="site-footer"></footer>
+
+  <script src="../data/lessons.js"></script>
+  <script src="../assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>會計恆等式｜初會小教室</title>
+  <meta name="description" content="資產＝負債＋權益：所有交易都逃不出這條式子。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-root=".." data-lesson="01-accounting-equation">
+  <header id="site-header"></header>
+
+  <main class="lesson">
+    <p class="breadcrumb" id="lesson-breadcrumb"></p>
+    <h1>會計恆等式</h1>
+    <div class="lesson-meta badges" id="lesson-meta"></div>
+
+    <h2>學習目標</h2>
+    <div class="goal"><ul>
+      <li>能說出資產、負債、權益各自代表什麼</li>
+      <li>能分析一筆交易對會計恆等式兩邊的影響</li>
+      <li>能分辨「股東投資」和「收入」對權益的不同影響</li>
+    </ul></div>
+
+    <h2>核心觀念</h2>
+    <p>會計的第一課只有一條式子。後面學到的分錄、報表，全部都建立在它上面。</p>
+    <p class="formula">資產 ＝ 負債 ＋ 權益</p>
+
+    <div class="concept">
+      <h3>資產：公司擁有、未來能帶來好處的資源</h3>
+      <p>例如現金、應收帳款、用品、設備。重點是「能帶來未來經濟效益」，不是只有看得到、摸得到的東西。</p>
+    </div>
+    <div class="concept">
+      <h3>負債：公司欠別人、未來要還的義務</h3>
+      <p>例如向銀行借的錢（銀行借款）、買東西還沒付的錢（應付帳款）、先收了錢但還沒提供服務（預收收入）。</p>
+    </div>
+    <div class="concept">
+      <h3>權益：資產扣掉負債後，屬於股東的部分</h3>
+      <p>公司的資產，債權人和股東都有請求權，而且債權人優先。先把負債扣掉，<strong>剩下的</strong>才屬於股東，所以權益又稱為「剩餘權益」：資產 － 負債 ＝ 權益。</p>
+      <p>權益的來源只有兩種：股東<strong>投入</strong>的錢（普通股股本），以及公司<strong>賺來</strong>沒有分配掉的錢（保留盈餘）。</p>
+    </div>
+
+    <p>把權益拆開，就得到「擴充版」的恆等式：</p>
+    <p class="formula">資產 ＝ 負債 ＋ 普通股股本 ＋（收入 － 費用 － 股利）</p>
+    <p>讓權益增加的是<strong>股東投資</strong>與<strong>收入</strong>；讓權益減少的是<strong>費用</strong>與<strong>股利</strong>。注意：股利會減少保留盈餘，但它<strong>不是費用</strong>，而是把賺到的錢分給股東。</p>
+
+    <div class="tip"><p>可以把恆等式想成一個天平：左邊是「公司有什麼」，右邊是「這些東西是誰出的錢」。不論發生什麼交易，天平永遠保持平衡。</p></div>
+
+    <h2>範例演練</h2>
+    <p>小明在 1 月開了一間「小明咖啡」，第一個月發生以下交易。我們逐筆看它對恆等式的影響：</p>
+    <ol>
+      <li>1/1　小明投資現金 $100,000 成立公司，取得股票。</li>
+      <li>1/3　向銀行借款 $50,000。</li>
+      <li>1/5　以現金購買咖啡機等設備 $30,000。</li>
+      <li>1/8　賒購咖啡杯、濾紙等用品 $5,000。</li>
+      <li>1/15　收到社群網站的廣告帳單 $2,000，約定下個月再付款。</li>
+      <li>1/20　承接企業活動的咖啡外燴服務，收現 $20,000。</li>
+      <li>1/31　支付 1 月店面租金 $8,000。</li>
+      <li>1/31　發放現金股利 $3,000 給股東小明。</li>
+    </ol>
+
+    <div class="table-wrap">
+      <table class="analysis">
+        <thead>
+          <tr><th>交易</th><th>資產</th><th>負債</th><th>權益</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1/1 股東投資</td><td><span class="up">＋</span>100,000 現金</td><td>—</td><td><span class="up">＋</span>100,000 普通股股本</td></tr>
+          <tr><td>1/3 銀行借款</td><td><span class="up">＋</span>50,000 現金</td><td><span class="up">＋</span>50,000 銀行借款</td><td>—</td></tr>
+          <tr><td>1/5 現購設備</td><td><span class="up">＋</span>30,000 設備<br><span class="down">－</span>30,000 現金</td><td>—</td><td>—</td></tr>
+          <tr><td>1/8 賒購用品</td><td><span class="up">＋</span>5,000 用品</td><td><span class="up">＋</span>5,000 應付帳款</td><td>—</td></tr>
+          <tr><td>1/15 賒購廣告</td><td>—</td><td><span class="up">＋</span>2,000 應付帳款</td><td><span class="down">－</span>2,000 費用</td></tr>
+          <tr><td>1/20 服務收現</td><td><span class="up">＋</span>20,000 現金</td><td>—</td><td><span class="up">＋</span>20,000 收入</td></tr>
+          <tr><td>1/31 支付租金</td><td><span class="down">－</span>8,000 現金</td><td>—</td><td><span class="down">－</span>8,000 費用</td></tr>
+          <tr><td>1/31 支付股利</td><td><span class="down">－</span>3,000 現金</td><td>—</td><td><span class="down">－</span>3,000 股利</td></tr>
+          <tr class="total"><td>1/31 餘額</td><td>164,000</td><td>57,000</td><td>107,000</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>月底驗算：資產 $164,000（現金 129,000＋用品 5,000＋設備 30,000）＝負債 $57,000（銀行借款 50,000＋應付帳款 7,000）＋權益 $107,000。天平平衡。</p>
+    <div class="tip"><p>兩筆值得注意的交易：1/5 買設備只是「現金換成設備」，資產內部一增一減，總數不變；1/15 賒購廣告完全沒動到現金，但費用已經發生，權益減少、負債增加。</p></div>
+
+    <h2>常見錯誤</h2>
+    <div class="warn">
+      <p><strong>錯誤：</strong>股東投資的錢讓公司現金變多，所以是「收入」。</p>
+      <p><strong>正確：</strong>股東投資是增加<strong>普通股股本</strong>，不是收入。收入一定來自公司提供商品或服務，股東拿錢進來不算公司「賺到」。</p>
+    </div>
+    <div class="warn">
+      <p><strong>錯誤：</strong>賒購用品時還沒付錢，所以先不用記，對恆等式沒影響。</p>
+      <p><strong>正確：</strong>用品已經拿到了，資產增加；同時多了一筆要付的錢，負債（應付帳款）增加。兩邊都要記。</p>
+    </div>
+    <div class="warn">
+      <p><strong>錯誤：</strong>發放股利讓現金減少、權益也減少，所以股利是一種費用。</p>
+      <p><strong>正確：</strong>股利會減少保留盈餘，但<strong>不是費用</strong>。費用是為了賺取收入而耗用的成本；股利是把已經賺到的盈餘分配給股東，不會出現在損益表上。</p>
+    </div>
+
+    <h2>小測驗</h2>
+    <details class="quiz">
+      <summary>Q1. 小明咖啡年底的資產為 $500,000、負債為 $180,000，權益是多少？</summary>
+      <div class="answer">
+        <p><strong>答案：</strong>$320,000</p>
+        <p>權益 ＝ 資產 － 負債 ＝ 500,000 － 180,000 ＝ 320,000。</p>
+      </div>
+    </details>
+    <details class="quiz">
+      <summary>Q2. 2/10 客戶付清先前賒欠的外燴服務費 $12,000（原本記為應收帳款），對恆等式有什麼影響？</summary>
+      <div class="answer">
+        <p><strong>答案：</strong>現金增加 $12,000、應收帳款減少 $12,000，總資產不變，負債和權益也不變。</p>
+        <p>收入在提供服務時就已經記過了，現在收到錢只是「應收帳款換成現金」，不能再記一次收入。</p>
+      </div>
+    </details>
+    <details class="quiz">
+      <summary>Q3. 以下哪一項<strong>不會</strong>讓權益增加？（A）提供服務收現　（B）股東再投資　（C）向銀行借款</summary>
+      <div class="answer">
+        <p><strong>答案：</strong>（C）向銀行借款</p>
+        <p>借款讓資產和負債同時增加，權益不變。（A）是收入、（B）是普通股股本增加，兩者都會讓權益增加。</p>
+      </div>
+    </details>
+
+    <h2>重點回顧</h2>
+    <div class="recap"><ul>
+      <li><strong>資產 ＝ 負債 ＋ 權益</strong>，任何交易後都必須成立。</li>
+      <li>權益是<strong>剩餘權益</strong>：資產先滿足債權人，剩下的才屬於股東。</li>
+      <li>權益增加：股東投資、收入；權益減少：費用、股利。<strong>股利不是費用</strong>。</li>
+      <li>股東投資不是收入；借款不是收入；收回應收帳款也不是收入。</li>
+      <li>有些交易只在資產內部一增一減，例如現金買設備，總數不變。</li>
+    </ul></div>
+  </main>
+
+  <nav id="lesson-pager"></nav>
+  <footer id="site-footer"></footer>
+
+  <script src="../data/lessons.js"></script>
+  <script src="../assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>借貸法則與分錄｜初會小教室</title>
+  <meta name="description" content="借方、貸方不是增加減少，一次搞懂記帳的規則。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-root=".." data-lesson="02-debit-credit">
+  <header id="site-header"></header>
+
+  <main class="lesson">
+    <p class="breadcrumb" id="lesson-breadcrumb"></p>
+    <h1>借貸法則與分錄</h1>
+    <div class="lesson-meta badges" id="lesson-meta"></div>
+
+    <h2>學習目標</h2>
+    <div class="goal"><ul>
+      <li>能說出「借方」「貸方」只是左邊、右邊的意思</li>
+      <li>能判斷資產、負債、權益、收入、費用增加時要記在哪一方</li>
+      <li>能把一筆交易寫成借貸平衡的分錄，並說明記帳流程：日記簿 → 分類帳</li>
+    </ul></div>
+
+    <h2>核心觀念</h2>
+    <p>在<a href="01-accounting-equation.html">會計恆等式</a>裡，我們用「＋」「－」分析交易。實務上記帳不用加減號，而是用「借」和「貸」。</p>
+
+    <div class="concept">
+      <h3>借方 ＝ 左邊，貸方 ＝ 右邊</h3>
+      <p>「借」「貸」是歷史留下來的名稱，現在<strong>沒有</strong>「借錢」「貸款」的意思，也<strong>不等於</strong>增加或減少。它只告訴你金額寫在帳戶的左邊還是右邊。</p>
+    </div>
+
+    <div class="concept">
+      <h3>借貸法則：看科目在恆等式的哪一邊</h3>
+      <p>恆等式左邊的資產，增加記左邊（借）；右邊的負債和權益，增加記右邊（貸）。收入會讓權益變多，所以跟權益一樣；費用和股利會讓權益變少，所以方向相反。</p>
+    </div>
+
+    <div class="table-wrap">
+      <table class="simple">
+        <thead><tr><th>科目類別</th><th>增加記</th><th>減少記</th><th>正常餘額</th></tr></thead>
+        <tbody>
+          <tr><td>資產</td><td>借方</td><td>貸方</td><td>借方</td></tr>
+          <tr><td>費用</td><td>借方</td><td>貸方</td><td>借方</td></tr>
+          <tr><td>股利</td><td>借方</td><td>貸方</td><td>借方</td></tr>
+          <tr><td>負債</td><td>貸方</td><td>借方</td><td>貸方</td></tr>
+          <tr><td>權益（普通股股本）</td><td>貸方</td><td>借方</td><td>貸方</td></tr>
+          <tr><td>權益（保留盈餘）</td><td>貸方</td><td>借方</td><td>貸方</td></tr>
+          <tr><td>收入</td><td>貸方</td><td>借方</td><td>貸方</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tip"><p>口訣：「<strong>資費股</strong>借增，<strong>負權收</strong>貸增」。只要記住哪些科目增加記借方，減少就記在另一邊。</p></div>
+
+    <p class="formula">每一筆分錄：借方合計 ＝ 貸方合計</p>
+
+    <div class="concept">
+      <h3>複式簿記：每筆交易至少影響兩個帳戶</h3>
+      <p>每筆交易都有雙重效果，所以至少會動到兩個帳戶，而且借方金額一定等於貸方金額。只用到兩個科目的叫「簡單分錄」；三個以上科目的叫「<strong>複合分錄</strong>」，例如買設備時一部分付現、一部分賒帳。</p>
+    </div>
+
+    <div class="concept">
+      <h3>記帳流程三步驟</h3>
+      <ol>
+        <li><strong>分析交易</strong>：依據發票、收據等原始憑證，判斷影響哪些帳戶。</li>
+        <li><strong>記入日記簿</strong>：依時間順序寫下分錄（日期、借貸科目與金額、簡短說明）。日記簿又稱「原始登錄簿」。</li>
+        <li><strong>過帳到分類帳</strong>：把日記簿的金額依科目分別抄到各個帳戶（也就是 T 字帳），算出每個帳戶的餘額。</li>
+      </ol>
+    </div>
+
+    <h2>範例演練</h2>
+    <p><strong>步驟 2：記入日記簿。</strong>把<a href="01-accounting-equation.html">上一篇</a>小明咖啡 1 月的八筆交易，依時間順序寫成分錄：</p>
+
+    <div class="table-wrap">
+      <table class="journal">
+        <thead><tr><th>日期</th><th>會計科目</th><th>借方</th><th>貸方</th></tr></thead>
+        <tbody>
+          <tr><td rowspan="2">1/1</td><td>現金</td><td class="num">100,000</td><td></td></tr>
+          <tr class="cr"><td>普通股股本</td><td></td><td class="num">100,000</td></tr>
+          <tr class="memo"><td colspan="4">股東投資現金成立公司（資產增加記借、權益增加記貸）</td></tr>
+
+          <tr><td rowspan="2">1/3</td><td>現金</td><td class="num">50,000</td><td></td></tr>
+          <tr class="cr"><td>銀行借款</td><td></td><td class="num">50,000</td></tr>
+          <tr class="memo"><td colspan="4">向銀行借款（資產增加記借、負債增加記貸）</td></tr>
+
+          <tr><td rowspan="2">1/5</td><td>設備</td><td class="num">30,000</td><td></td></tr>
+          <tr class="cr"><td>現金</td><td></td><td class="num">30,000</td></tr>
+          <tr class="memo"><td colspan="4">現購設備（設備增加記借、現金減少記貸）</td></tr>
+
+          <tr><td rowspan="2">1/8</td><td>用品</td><td class="num">5,000</td><td></td></tr>
+          <tr class="cr"><td>應付帳款</td><td></td><td class="num">5,000</td></tr>
+          <tr class="memo"><td colspan="4">賒購用品（資產增加記借、負債增加記貸）</td></tr>
+
+          <tr><td rowspan="2">1/15</td><td>廣告費用</td><td class="num">2,000</td><td></td></tr>
+          <tr class="cr"><td>應付帳款</td><td></td><td class="num">2,000</td></tr>
+          <tr class="memo"><td colspan="4">賒購廣告（費用增加記借、負債增加記貸）</td></tr>
+
+          <tr><td rowspan="2">1/20</td><td>現金</td><td class="num">20,000</td><td></td></tr>
+          <tr class="cr"><td>服務收入</td><td></td><td class="num">20,000</td></tr>
+          <tr class="memo"><td colspan="4">提供外燴服務收現（資產增加記借、收入增加記貸）</td></tr>
+
+          <tr><td rowspan="2">1/31</td><td>租金費用</td><td class="num">8,000</td><td></td></tr>
+          <tr class="cr"><td>現金</td><td></td><td class="num">8,000</td></tr>
+          <tr class="memo"><td colspan="4">支付 1 月租金（費用增加記借、現金減少記貸）</td></tr>
+
+          <tr><td rowspan="2">1/31</td><td>股利</td><td class="num">3,000</td><td></td></tr>
+          <tr class="cr"><td>現金</td><td></td><td class="num">3,000</td></tr>
+          <tr class="memo"><td colspan="4">發放現金股利（股利增加記借、現金減少記貸；股利不是費用）</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p><strong>步驟 3：過帳到分類帳。</strong>把所有和「現金」有關的分錄過到現金帳戶，就能算出月底現金餘額：</p>
+    <div class="t-account">
+      <div class="t-title">現金</div>
+      <div class="t-body">
+        <div class="t-side"><div class="t-label">借方</div>
+          <div class="t-row"><span>1/1</span><span>100,000</span></div>
+          <div class="t-row"><span>1/3</span><span>50,000</span></div>
+          <div class="t-row"><span>1/20</span><span>20,000</span></div>
+          <div class="t-row t-balance"><span>餘額</span><span>129,000</span></div>
+        </div>
+        <div class="t-side"><div class="t-label">貸方</div>
+          <div class="t-row"><span>1/5</span><span>30,000</span></div>
+          <div class="t-row"><span>1/31</span><span>8,000</span></div>
+          <div class="t-row"><span>1/31</span><span>3,000</span></div>
+        </div>
+      </div>
+    </div>
+    <p>借方合計 170,000 － 貸方合計 41,000 ＝ 借餘 129,000，和上一篇算出的現金餘額相同。</p>
+
+    <h2>常見錯誤</h2>
+    <div class="warn">
+      <p><strong>錯誤：</strong>借方就是增加，貸方就是減少。</p>
+      <p><strong>正確：</strong>要看科目類別。現金增加記借方，但應付帳款增加記<strong>貸方</strong>。先判斷科目屬於哪一類，再決定方向。</p>
+    </div>
+    <div class="warn">
+      <p><strong>錯誤：</strong>付租金時錢流出去了，所以「租金費用」記貸方。</p>
+      <p><strong>正確：</strong>錢流出去的是<strong>現金</strong>，所以現金記貸方；費用增加則記<strong>借方</strong>。一筆分錄裡兩個科目各有各的方向。</p>
+    </div>
+    <div class="warn">
+      <p><strong>錯誤：</strong>只要收到現金，貸方就寫「收入」。</p>
+      <p><strong>正確：</strong>要看這筆錢從哪裡來。股東投資貸記普通股股本，借款貸記銀行借款，先收錢還沒提供服務貸記預收收入（負債）。只有提供了服務才是收入。</p>
+    </div>
+
+    <h2>小測驗</h2>
+    <details class="quiz">
+      <summary>Q1. 2/5 小明咖啡提供外燴服務 $12,000，客戶說月底再付款。分錄怎麼寫？</summary>
+      <div class="answer">
+        <p><strong>答案：</strong>借：應收帳款 12,000／貸：服務收入 12,000</p>
+        <p>服務已經提供，收入就要認列；還沒收到的錢是公司的權利，記為資產「應收帳款」。</p>
+      </div>
+    </details>
+    <details class="quiz">
+      <summary>Q2. 2/10 小明咖啡購買烘豆機 $50,000，當場付現 $20,000，其餘 $30,000 下個月再付。分錄怎麼寫？</summary>
+      <div class="answer">
+        <p><strong>答案：</strong>借：設備 50,000／貸：現金 20,000、應付帳款 30,000</p>
+        <p>這是<strong>複合分錄</strong>：一個借方科目、兩個貸方科目。檢查一下，借方 50,000 ＝ 貸方 20,000 ＋ 30,000。</p>
+      </div>
+    </details>
+    <details class="quiz">
+      <summary>Q3. 2/15 客戶先付 3 月活動的訂金 $6,000，小明咖啡還沒提供服務。分錄怎麼寫？</summary>
+      <div class="answer">
+        <p><strong>答案：</strong>借：現金 6,000／貸：預收收入 6,000</p>
+        <p>錢收到了，但服務還沒提供，公司欠客戶一場服務，所以是負債「預收收入」，不是收入。等 3 月提供服務後才轉成收入（<a href="04-adjusting-entries.html">期末調整分錄</a>會講到）。</p>
+      </div>
+    </details>
+
+    <h2>重點回顧</h2>
+    <div class="recap"><ul>
+      <li>借方＝左邊、貸方＝右邊，<strong>不等於</strong>增加或減少。</li>
+      <li><strong>資產、費用、股利</strong>增加記借方；<strong>負債、權益、收入</strong>增加記貸方。</li>
+      <li>每一筆分錄的借方合計一定等於貸方合計。</li>
+      <li>記帳流程：<strong>分析交易 → 記入日記簿 → 過帳到分類帳</strong>。</li>
+      <li>寫分錄前先問兩件事：影響哪些科目？每個科目是增加還是減少？</li>
+    </ul></div>
+  </main>
+
+  <nav id="lesson-pager"></nav>
+  <footer id="site-footer"></footer>
+
+  <script src="../data/lessons.js"></script>
+  <script src="../assets/site.js"></script>
+</body>
+</html>

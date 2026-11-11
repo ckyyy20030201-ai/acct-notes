@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+  講義模板（請勿直接修改本檔，也不要登記進 data/lessons.js）
+  使用方式：複製到 lessons/{slug}.html，並把所有 {{...}} 換掉
+  規則請見 CLAUDE.md 第 5、6、8 節
+-->
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{講義標題}}｜初會小教室</title>
+  <meta name="description" content="{{與 data/lessons.js 的 summary 相同}}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-root=".." data-lesson="{{NN-english-name}}">
+  <header id="site-header"></header>
+
+  <main class="lesson">
+    <p class="breadcrumb" id="lesson-breadcrumb"></p>
+    <h1>{{講義標題}}</h1>
+    <div class="lesson-meta badges" id="lesson-meta"></div>
+
+    <!-- 1. 學習目標：2–4 點，以「能…」開頭 -->
+    <h2>學習目標</h2>
+    <div class="goal"><ul>
+      <li>能{{目標一}}</li>
+      <li>能{{目標二}}</li>
+    </ul></div>
+
+    <!-- 2. 核心觀念：.concept / .formula / .tip -->
+    <h2>核心觀念</h2>
+    <p>{{一句話引入主題}}</p>
+    <div class="concept">
+      <h3>{{觀念名稱}}</h3>
+      <p>{{觀念說明}}</p>
+    </div>
+    <p class="formula">{{公式（若有）}}</p>
+    <div class="tip"><p>{{記憶口訣或補充}}</p></div>
+
+    <!-- 3. 範例演練：以「小明咖啡」為例；分錄用 table.journal -->
+    <h2>範例演練</h2>
+    <p>{{情境說明：小明咖啡在 ○/○ ……}}</p>
+    <div class="table-wrap">
+      <table class="journal">
+        <thead><tr><th>日期</th><th>會計科目</th><th>借方</th><th>貸方</th></tr></thead>
+        <tbody>
+          <tr><td rowspan="2">{{日期}}</td><td>{{借方科目}}</td><td class="num">{{金額}}</td><td></td></tr>
+          <tr class="cr"><td>{{貸方科目}}</td><td></td><td class="num">{{金額}}</td></tr>
+          <tr class="memo"><td colspan="4">{{摘要說明}}</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 4. 常見錯誤：2–3 個 .warn -->
+    <h2>常見錯誤</h2>
+    <div class="warn">
+      <p><strong>錯誤：</strong>{{學生常見的錯誤想法}}</p>
+      <p><strong>正確：</strong>{{正確觀念}}</p>
+    </div>
+
+    <!-- 5. 小測驗：2–3 題 details.quiz -->
+    <h2>小測驗</h2>
+    <details class="quiz">
+      <summary>Q1. {{題目}}</summary>
+      <div class="answer">
+        <p><strong>答案：</strong>{{答案}}</p>
+        <p>{{解析}}</p>
+      </div>
+    </details>
+
+    <!-- 6. 重點回顧：3–5 點 -->
+    <h2>重點回顧</h2>
+    <div class="recap"><ul>
+      <li>{{重點一}}</li>
+      <li>{{重點二}}</li>
+      <li>{{重點三}}</li>
+    </ul></div>
+  </main>
+
+  <nav id="lesson-pager"></nav>
+  <footer id="site-footer"></footer>
+
+  <script src="../data/lessons.js"></script>
+  <script src="../assets/site.js"></script>
+</body>
+</html>
